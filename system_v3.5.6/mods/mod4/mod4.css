@@ -1,0 +1,139 @@
+/* mod4.css */
+/* Estilos CSS únicos para el módulo 4 */
+.modulo-4 {
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    display: flex; /* Mostrar como un contenedor flexible */
+}
+
+.mod4-columna-1 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    background-color: #FFF; /* Color de fondo blanco */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex: 1; /* Flexibilidad igual a 1 */
+}
+
+.mod4-columna-2 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    background-color: #FFF; /* Color de fondo blanco */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 5px; /* Margen izquierdo de 5 píxeles */
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex: 1; /* Flexibilidad igual a 1 */
+}
+
+.mod4-columna-3 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    background-color: #FFF; /* Color de fondo blanco */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 5px; /* Margen izquierdo de 5 píxeles */
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex: 1; /* Flexibilidad igual a 1 */
+}
+
+.mod4-columna-4 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    background-color: #FFF; /* Color de fondo blanco */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 5px; /* Margen izquierdo de 5 píxeles */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex: 1; /* Flexibilidad igual a 1 */
+}
+
+@media (max-width: 768px) {
+    .modulo-4 {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en dispositivos móviles */
+    }
+
+    .mod4-columna-1 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+
+    .mod4-columna-2 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+
+    .mod4-columna-3 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+
+    .mod4-columna-4 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+}

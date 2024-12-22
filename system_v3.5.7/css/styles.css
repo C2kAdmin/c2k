@@ -1,0 +1,143 @@
+/* global.css */
+
+/* Estilos generales */
+body {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.header {
+    border: 1px solid #333;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    z-index: 1000;
+}
+
+/* Estilos del contenedor principal */
+.container_ppal {
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    margin-top: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+/* Estilos del contenedor secundario */
+.container_secund {
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+/* Estilos de las columnas principales */
+.left-column_ppal,
+.right-column_ppal,
+.center-column_ppal,
+.left-column_secun,
+.right-column_secun,
+.center-column_secun {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: hidden;
+}
+
+.center-column_ppal,
+.center-column_secun {
+    flex-basis: 50%;
+}
+
+/* Estilos de las secciones principales */
+.section_ppal1,
+.section_ppal2,
+.section-footer {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+/* Estilos del contenido dinámico */
+#contenido_dinamico {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .container_ppal, .container_secund {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-top: 70px;
+    }
+
+    .center-column_ppal, .center-column_secun {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .left-column_ppal, .left-column_secun {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    .right-column_ppal, .right-column_secun {
+        order: 3;
+        flex-basis: 100%;
+    }
+}

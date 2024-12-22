@@ -1,0 +1,293 @@
+/* Efecto slide-left */
+.slide-left {
+    opacity: 0;
+}
+
+.slide-left-active {
+    animation: slideLeft 1s forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto slide-right */
+.slide-right {
+    opacity: 0;
+}
+
+.slide-right-active {
+    animation: slideRight 1s forwards;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto slide-up */
+.slide-up {
+    opacity: 0;
+}
+
+.slide-up-active {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto slide-down */
+.slide-down {
+    opacity: 0;
+}
+
+.slide-down-active {
+    animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto fade-in */
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in-active {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efecto fade-out */
+.fade-out {
+    opacity: 1;
+}
+
+.fade-out-active {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Efecto zoom-in */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.zoom-in-active {
+    animation: zoomIn 1s forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Efecto zoom-out */
+.zoom-out {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.zoom-out-active {
+    animation: zoomOut 1s forwards;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Efecto rotate */
+.rotate {
+    transform: rotate(0deg);
+}
+
+.rotate-active {
+    animation: rotate 1s forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Efecto scale */
+.scale {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.scale-active {
+    transform: scale(1.2);
+}
+
+/* Efecto background-fade */
+.background-fade {
+    background-color: #000;
+    transition: background-color 0.5s ease;
+}
+
+.background-fade-active {
+    background-color: #fff;
+}
+
+/* Efecto color-change */
+.color-change {
+    color: #000;
+    transition: color 0.5s ease;
+}
+
+.color-change-active {
+    color: #ff0000;
+}
+
+/* Efecto pulse */
+.pulse {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.pulse-active {
+    transform: scale(1.1);
+}
+
+/* Efecto swing */
+.swing {
+    transform-origin: top center;
+    animation: swing 1s ease-in-out infinite alternate;
+}
+
+@keyframes swing {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+/* Efecto blink */
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Efecto scroll */
+.scroll {
+    background-image: url('path/to/background-image.jpg');
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Efecto shadow */
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+
+.shadow-active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Efecto gradient */
+.gradient {
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    transition: background 0.5s ease;
+}
+
+.gradient-active {
+    background: linear-gradient(to right, #0000ff, #ff00ff);
+}
+
+/* Efecto bounce */
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}

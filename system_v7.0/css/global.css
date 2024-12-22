@@ -1,0 +1,119 @@
+/* global.css */
+
+/* Estilos generales */
+body {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    border: 1px solid #333;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.container_ppal, .container_secund {
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 0;
+    margin: 0;
+    overflow: hidden;
+    min-height: 500px;
+    position: relative;
+}
+
+.left-column_ppal, .center-column_ppal, .right-column_ppal,
+.left-column_secun, .center-column_secun, .right-column_secun {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 5px 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: hidden;
+}
+
+.center-column_ppal, .center-column_secun {
+    flex-basis: 50%;
+}
+
+.section_ppal1, .section_ppal2, .section-footer {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+#contenido_dinamico {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 5px 0; /* Ajusta este valor para cambiar la altura en dispositivos móviles */
+    }
+
+    .container_ppal, .container_secund {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-top: 70px;
+    }
+
+    .center-column_ppal, .center-column_secun {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .left-column_ppal, .left-column_secun {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    .right-column_ppal, .right-column_secun {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    /* Desactivar el comportamiento flotante en móviles */
+    .mod_flot_izq {
+        position: relative;
+        top: 0;
+        width: 100%; /* Ajuste para dispositivos móviles */
+    }
+}
+
+/* Estilos para el módulo flotante */
+.mod_flot_izq {
+    position: absolute;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: calc(100% - 3px); /* Ajuste del ancho */
+    box-sizing: border-box;
+}
+
+.mod_flot_izq_columna_1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

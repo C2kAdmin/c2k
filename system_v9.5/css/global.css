@@ -1,0 +1,439 @@
+/* global.css */
+
+/* Estilos generales */
+body {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    border: 1px solid #333;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.container_ppal, .container_secund {
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 0;
+    margin: 0;
+    overflow: hidden;
+    min-height: 500px;
+    position: relative;
+}
+
+.left-column_ppal, .center-column_ppal, .right-column_ppal,
+.left-column_secun, .center-column_secun, .right-column_secun {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 5px 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: hidden;
+}
+
+.center-column_ppal, .center-column_secun {
+    flex-basis: 50%;
+}
+
+.section_ppal1, .section_ppal2, .section-footer {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+#contenido_dinamico {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 5px 0; /* Ajusta este valor para cambiar la altura en dispositivos móviles */
+    }
+
+    .container_ppal, .container_secund {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-top: 70px;
+    }
+
+    .center-column_ppal, .center-column_secun {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .left-column_ppal, .left-column_secun {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    .right-column_ppal, .right-column_secun {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    /* Desactivar el comportamiento flotante en móviles */
+    .mod_flot_izq {
+        position: relative;
+        top: 0;
+        width: 100%; /* Ajuste para dispositivos móviles */
+    }
+}
+
+/* Estilos para el módulo flotante */
+.mod_flot_izq {
+    position: absolute;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: calc(100% - 3px); /* Ajuste del ancho */
+    box-sizing: border-box;
+}
+
+.mod_flot_izq_columna_1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Archivo: global.css
+   Descripción: Estilos generales para la plantilla principal */
+
+
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+    min-height: 500px;
+}
+
+/* Columnas */
+.left-column, .right-column {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.center-column {
+    flex: 2;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Fondo del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contenido del modal */
+.modal-contenido {
+    background-color: #f9f9f9;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.3s ease-out;
+}
+
+/* Botón de cerrar */
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover, .cerrar:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilo general del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada */
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Campos de entrada: enfoque */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+/* Contraseña y Confirmar Contraseña en una línea */
+.password-container {
+    display: flex;
+    gap: 10px;
+}
+
+.password-container input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Botón de envío */
+form button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor para posiciones */
+.posiciones-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Ajuste de estilos de los selects de posición */
+.posiciones-container select {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.posiciones-container select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+/* Imagen de perfil */
+#imagenActual {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px 0;
+    border-radius: 50%;
+    display: none;
+}
+
+/* Mensajes de error */
+.error-message {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    padding: 15px;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Mensajes de éxito */
+.success-message {
+    background-color: #e6ffe6;
+    color: #008000;
+    padding: 15px;
+    border: 1px solid #008000;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Notificaciones */
+.notification {
+    position: fixed;
+    top: -50px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1500;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(60px);
+}
+
+.notification.error {
+    background-color: #ff4d4d;
+}
+
+.notification.success {
+    background-color: #28a745;
+}
+
+/* mods/mod_menu/mod_menu.css */
+
+/* Estilos para el menú */
+.menu-buttons {
+    padding: 10px;
+    background-color: #E8E8E8;
+    text-align: right;
+}
+
+.menu-logo {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.menu-logo-mobile {
+    display: none;
+}
+
+#menu-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    vertical-align: middle;
+}
+
+.mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el logo y el botón a la derecha */
+}
+
+.mobile-menu-content {
+    display: none;
+}
+
+.mobile-menu-content.show {
+    display: block;
+}
+
+.menu-button {
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #ddd;
+}
+
+.menu-button.active {
+    background-color: yellow;
+}
+
+.desktop-menu .menu-button {
+    display: inline-block;
+    margin-bottom: 0;
+    width: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+    #menu-icon {
+        display: none;
+    }
+    .mobile-menu-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+    .menu-logo-mobile {
+        display: inline;
+        height: 30px;
+        vertical-align: middle;
+    }
+}
+
+.profile-pic {
+    width: 40px; /* o el tamaño que desees */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.user-welcome {
+    display: flex;
+    align-items: center;
+}
+

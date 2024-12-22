@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+    padding-top: 10px; /* Añade un espacio en la parte superior del cuerpo del documento */
+    padding-left: 0px; /* No añade espacio a la izquierda del cuerpo del documento */
+    padding-right: 0px; /* No añade espacio a la derecha del cuerpo del documento */
+    padding-bottom: 10px; /* Añade un espacio en la parte inferior del cuerpo del documento */
+    margin-top: 0px; /* No añade margen en la parte superior del cuerpo del documento */
+    margin-left: 0px; /* No añade margen a la izquierda del cuerpo del documento */
+    margin-right: 0px; /* No añade margen a la derecha del cuerpo del documento */
+    margin-bottom: 0px; /* No añade margen en la parte inferior del cuerpo del documento */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto del documento */
+}
+
+/* Estilos del encabezado */
+.header {
+    border: 1px solid #333; /* Añade un borde alrededor del encabezado */
+    background-color: #333; /* Establece el color de fondo del encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Posiciona el encabezado en la parte superior de la ventana */
+    left: 0; /* Posiciona el encabezado en la parte izquierda de la ventana */
+    width: 100%; /* Hace que el encabezado ocupe todo el ancho de la ventana */
+    padding-top: 30px; /* Añade un espacio en la parte superior del encabezado */
+    padding-left: 0px; /* No añade espacio a la izquierda del encabezado */
+    padding-right: 0px; /* No añade espacio a la derecha del encabezado */
+    padding-bottom: 30px; /* Añade un espacio en la parte inferior del encabezado */
+    margin-top: 0px; /* No añade margen en la parte superior del encabezado */
+    margin-left: 0px; /* No añade margen a la izquierda del encabezado */
+    margin-right: 0px; /* No añade margen a la derecha del encabezado */
+    margin-bottom: 0px; /* No añade margen en la parte inferior del encabezado */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Estilos del contenedor principal */
+.container_ppal {
+    border: 1px solid #fff; /* Añade un borde alrededor del contenedor */
+    background-color: #fff; /* Establece el color de fondo del contenedor */
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    flex-direction: row; /* Coloca los elementos del contenedor en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del contenedor */
+    padding-top: 50px; /* Añade un espacio en la parte superior del contenedor */
+    padding-left: 0px; /* No añade espacio a la izquierda del contenedor */
+    padding-right: 0px; /* No añade espacio a la derecha del contenedor */
+    padding-bottom: 50px; /* Añade un espacio en la parte inferior del contenedor */
+    margin-top: 70px; /* Añade un margen en la parte superior del contenedor */
+    margin-left: 0px; /* No añade margen a la izquierda del contenedor */
+    margin-right: 0px; /* No añade margen a la derecha del contenedor */
+    margin-bottom: 0px; /* No añade margen en la parte inferior del contenedor */
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenedor */
+}
+
+/* Estilos del contenedor secundario */
+.container_secund {
+    border: 1px solid #fff; /* Añade un borde alrededor del contenedor */
+    background-color: #fff; /* Establece el color de fondo del contenedor */
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    flex-direction: row; /* Coloca los elementos del contenedor en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del contenedor */
+    padding-top: 50px; /* Añade un espacio en la parte superior del contenedor */
+    padding-left: 0px; /* No añade espacio a la izquierda del contenedor */
+    padding-right: 0px; /* No añade espacio a la derecha del contenedor */
+    padding-bottom: 50px; /* Añade un espacio en la parte inferior del contenedor */
+    margin-top: 20px; /* Añade un margen en la parte superior del contenedor */
+    margin-left: 0px; /* No añade margen a la izquierda del contenedor */
+    margin-right: 0px; /* No añade margen a la derecha del contenedor */
+    margin-bottom: 0px; /* No añade margen en la parte inferior del contenedor */
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenedor */
+}
+
+/* Estilos de las columnas principales */
+.left-column_ppal {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna izquierda */
+    background-color: #fff; /* Establece el color de fondo de la columna izquierda */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna izquierda */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna izquierda */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna izquierda */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna izquierda */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna izquierda */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna izquierda */
+    margin-right: 0px; /* No añade margen a la derecha de la columna izquierda */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna izquierda */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna izquierda crezca si es necesario */
+    flex-basis: 0; /* Establece una base de flexibilidad inicial para la columna izquierda */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna izquierda */
+}
+
+.center-column_ppal {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna central */
+    background-color: #fff; /* Establece el color de fondo de la columna central */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna central */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna central */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna central */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna central */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna central */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna central */
+    margin-right: 0px; /* No añade margen a la derecha de la columna central */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna central */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna central crezca si es necesario */
+    flex-basis: 50%; /* Establece una base de flexibilidad inicial para la columna central */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna central */
+}
+
+.right-column_ppal {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna derecha */
+    background-color: #fff; /* Establece el color de fondo de la columna derecha */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna derecha */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna derecha */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna derecha */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna derecha */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna derecha */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna derecha */
+    margin-right: 0px; /* No añade margen a la derecha de la columna derecha */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna derecha */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna derecha crezca si es necesario */
+    flex-basis: 0; /* Establece una base de flexibilidad inicial para la columna derecha */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna derecha */
+}
+
+/* Estilos de las columnas secundarias */
+.left-column_secun {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna izquierda */
+    background-color: #fff; /* Establece el color de fondo de la columna izquierda */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna izquierda */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna izquierda */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna izquierda */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna izquierda */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna izquierda */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna izquierda */
+    margin-right: 0px; /* No añade margen a la derecha de la columna izquierda */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna izquierda */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna izquierda crezca si es necesario */
+    flex-basis: 0; /* Establece una base de flexibilidad inicial para la columna izquierda */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna izquierda */
+}
+
+.center-column_secun {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna central */
+    background-color: #fff; /* Establece el color de fondo de la columna central */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna central */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna central */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna central */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna central */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna central */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna central */
+    margin-right: 0px; /* No añade margen a la derecha de la columna central */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna central */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna central crezca si es necesario */
+    flex-basis: 50%; /* Establece una base de flexibilidad inicial para la columna central */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna central */
+}
+
+.right-column_secun {
+    border: 1px solid #fff; /* Añade un borde alrededor de la columna derecha */
+    background-color: #fff; /* Establece el color de fondo de la columna derecha */
+    padding-top: 5px; /* Añade un espacio en la parte superior de la columna derecha */
+    padding-left: 0px; /* No añade espacio a la izquierda de la columna derecha */
+    padding-right: 0px; /* No añade espacio a la derecha de la columna derecha */
+    padding-bottom: 5px; /* Añade un espacio en la parte inferior de la columna derecha */
+    margin-top: 0px; /* No añade margen en la parte superior de la columna derecha */
+    margin-left: 0px; /* No añade margen a la izquierda de la columna derecha */
+    margin-right: 0px; /* No añade margen a la derecha de la columna derecha */
+    margin-bottom: 0px; /* No añade margen en la parte inferior de la columna derecha */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de la columna */
+    flex-grow: 1; /* Permite que la columna derecha crezca si es necesario */
+    flex-basis: 0; /* Establece una base de flexibilidad inicial para la columna derecha */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la columna derecha */
+}
+
+/* Estilos de las secciones principales */
+.section_ppal1 {
+    border: 1px solid #fff; /* Añade un borde alrededor de la sección principal 1 */
+    background-color: #fff; /* Establece el color de fondo de la sección principal 1 */
+    padding-top: 10px; /* Añade un espacio en la parte superior de la sección principal 1 */
+    padding-left: 5px; /* Añade un espacio a la izquierda de la sección principal 1 */
+    padding-right: 5px; /* Añade un espacio a la derecha de la sección principal 1 */
+    padding-bottom: 10px; /* Añade un espacio en la parte inferior de la sección principal 1 */
+    margin-top: 10px; /* Añade un margen en la parte superior de la sección principal 1 */
+    margin-left: 0px; /* No añade margen a la izquierda de la sección principal 1 */
+    margin-right: 0px; /* No añade margen a la derecha de la sección principal 1 */
+    margin-bottom: 10px; /* Añade un margen en la parte inferior de la sección principal 1 */
+}
+
+.section_ppal2 {
+    border: 1px solid #fff; /* Añade un borde alrededor de la sección principal 2 */
+    background-color: #fff; /* Establece el color de fondo de la sección principal 2 */
+    padding-top: 10px; /* Añade un espacio en la parte superior de la sección principal 2 */
+    padding-left: 5px; /* Añade un espacio a la izquierda de la sección principal 2 */
+    padding-right: 5px; /* Añade un espacio a la derecha de la sección principal 2 */
+    padding-bottom: 10px; /* Añade un espacio en la parte inferior de la sección principal 2 */
+    margin-top: 10px; /* Añade un margen en la parte superior de la sección principal 2 */
+    margin-left: 0px; /* No añade margen a la izquierda de la sección principal 2 */
+    margin-right: 0px; /* No añade margen a la derecha de la sección principal 2 */
+    margin-bottom: 10px; /* Añade un margen en la parte inferior de la sección principal 2 */
+}
+
+.section-footer {
+    border: 1px solid #fff; /* Añade un borde alrededor de la sección del pie de página */
+    background-color: #fff; /* Establece el color de fondo de la sección del pie de página */
+    padding-top: 10px; /* Añade un espacio en la parte superior de la sección del pie de página */
+    padding-left: 5px; /* Añade un espacio a la izquierda de la sección del pie de página */
+    padding-right: 5px; /* Añade un espacio a la derecha de la sección del pie de página */
+    padding-bottom: 10px; /* Añade un espacio en la parte inferior de la sección del pie de página */
+    margin-top: 10px; /* Añade un margen en la parte superior de la sección del pie de página */
+    margin-left: 0px; /* No añade margen a la izquierda de la sección del pie de página */
+    margin-right: 0px; /* No añade margen a la derecha de la sección del pie de página */
+    margin-bottom: 10px; /* Añade un margen en la parte inferior de la sección del pie de página */
+}
+
+/* Estilos del contenido dinámico */
+#contenido_dinamico {
+    opacity: 1; /* Establece la opacidad completa del contenido dinámico */
+    transition: opacity 0.5s ease; /* Añade una transición suave de 0.5 segundos a la opacidad */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .container_ppal, .container_secund {
+        flex-direction: column; /* Cambia la dirección de los elementos del contenedor a columna en pantallas pequeñas */
+        padding-top: 50px; /* Añade un espacio en la parte superior del contenedor en pantallas pequeñas */
+        margin-top: 70px; /* Añade un margen en la parte superior del contenedor en pantallas pequeñas */
+    }
+
+    .center-column_ppal, .center-column_secun {
+        order: 1; /* Coloca la columna central en el primer orden en pantallas pequeñas */
+        flex-basis: 100%; /* Hace que la columna central ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    .left-column_ppal, .left-column_secun {
+        order: 2; /* Coloca la columna izquierda en el segundo orden en pantallas pequeñas */
+        flex-basis: 100%; /* Hace que la columna izquierda ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    .right-column_ppal, .right-column_secun {
+        order: 3; /* Coloca la columna derecha en el tercer orden en pantallas pequeñas */
+        flex-basis: 100%; /* Hace que la columna derecha ocupe todo el ancho en pantallas pequeñas */
+    }
+}

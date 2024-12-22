@@ -1,0 +1,50 @@
+/* mod_lateral.css */
+/* Estilos CSS únicos para el módulo lateral */
+.modulo-lateral {
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 10px; /* Margen superior de 10 píxeles */
+    margin-left: 10px; /* Margen izquierdo de 10 píxeles */
+    margin-right: 10px; /* Margen derecho de 10 píxeles */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+    display: flex; /* Mostrar como un contenedor flexible */
+    background-color: #FFF; /* Color de fondo blanco */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    overflow: visible; /* Asegura que la sombra sea visible en todos los lados */
+}
+
+.modulo-lateral-columna-1 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+}
+
+@media (max-width: 768px) {
+    .modulo-lateral {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en dispositivos móviles */
+    }
+
+    .modulo-lateral-columna-1 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+}

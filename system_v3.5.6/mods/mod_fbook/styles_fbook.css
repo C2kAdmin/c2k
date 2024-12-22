@@ -1,0 +1,110 @@
+/* styles_fbook.css */
+/* Estilos CSS únicos para el módulo fbook */
+.modulo-fbook {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fbook-header {
+    margin-bottom: 20px;
+}
+
+.fbook-header h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.fbook-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fbook-columna-1, .fbook-columna-2 {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.map-container {
+    position: relative;
+    height: 700px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.map-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.65); /* Fondo negro con 65% de transparencia */
+    color: #fff;
+    font-size: 0.75rem; /* Tamaño de letra reducido */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.map-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.875rem; /* Tamaño de letra para el título */
+}
+
+.fb-page {
+    width: 100% !important;
+    height: 700px;
+    border: none;
+    overflow: hidden;
+}
+
+.fb-like {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .modulo-fbook {
+        padding: 10px;
+    }
+
+    .fbook-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .fbook-content {
+        flex-direction: column;
+    }
+
+    .fbook-columna-1 {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 1; /* Mueve la columna del mapa más arriba en dispositivos móviles */
+    }
+
+    .fbook-columna-2 {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 2;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+
+    .map-container iframe {
+        margin-top: -50px; /* Mueve el mapa hacia arriba en dispositivos móviles */
+    }
+
+    .fb-page {
+        height: 600px;
+    }
+}

@@ -1,0 +1,90 @@
+/* mods/mod_menu/mod_menu.css */
+
+/* Estilos para el menú */
+.menu-buttons {
+    padding: 10px;
+    background-color: #E8E8E8;
+    text-align: right;
+}
+
+.menu-logo {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.menu-logo-mobile {
+    display: none;
+}
+
+#menu-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    vertical-align: middle;
+}
+
+.mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el logo y el botón a la derecha */
+}
+
+.mobile-menu-content {
+    display: none;
+}
+
+.mobile-menu-content.show {
+    display: block;
+}
+
+.menu-button {
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #ddd;
+}
+
+.menu-button.active {
+    background-color: yellow;
+}
+
+.desktop-menu .menu-button {
+    display: inline-block;
+    margin-bottom: 0;
+    width: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+    #menu-icon {
+        display: none;
+    }
+    .mobile-menu-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+    .menu-logo-mobile {
+        display: inline;
+        height: 30px;
+        vertical-align: middle;
+    }
+}

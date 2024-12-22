@@ -1,0 +1,37 @@
+/* mods/mod_lat_der/mod_lat_der.css */
+
+/* Estilos del Módulo Lateral Derecho */
+.mod_lat_der {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1; /* Color de fondo */
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: Arial, sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+}
+
+.mod_lat_der_columna_1 {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #fff; /* Fondo de las columnas */
+}
+
+.mod_lat_der h2 {
+    font-size: 1.2rem; /* Tamaño de la fuente del título */
+}
+
+.mod_lat_der p {
+    font-size: 0.9rem; /* Tamaño de la fuente del texto */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mod_lat_der {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,49 @@
+/* mods/mod_6/mod_6.css */
+
+/* Estilos del Módulo 6 */
+.mod_6 {
+    display: flex;
+    flex-direction: column; /* Estructura en filas */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1; /* Color de fondo */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: Arial, sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+}
+
+.mod_6_fila {
+    display: flex; /* Estructura en columnas dentro de cada fila */
+    gap: 20px;
+    justify-content: space-between; /* Distribuye las columnas uniformemente */
+}
+
+.mod_6_columna_1, .mod_6_columna_2, .mod_6_columna_3,
+.mod_6_columna_4, .mod_6_columna_5, .mod_6_columna_6 {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #fff; /* Fondo de las columnas */
+    text-align: center;
+}
+
+.mod_6 h2 {
+    font-size: 1.2rem; /* Tamaño de la fuente del título */
+}
+
+.mod_6 p {
+    font-size: 0.9rem; /* Tamaño de la fuente del texto */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mod_6 {
+        flex-direction: column;
+    }
+    .mod_6_fila {
+        flex-direction: column; /* Columnas apiladas en dispositivos pequeños */
+    }
+}

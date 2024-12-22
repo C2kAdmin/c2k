@@ -1,0 +1,72 @@
+/* mods/mod_sesion/mod_login.css */
+
+/* Estilos generales para el módulo de inicio de sesión */
+.mod_login {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.mod_login_columna {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Estilos para el formulario */
+.mod_login .form-grupo {
+    margin-bottom: 15px;
+}
+
+.mod_login .form-grupo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mod_login .form-grupo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.mod_login .form-grupo-boton button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.mod_login .form-grupo-boton button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de error */
+.mod_login .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .mod_login_columna {
+        width: 90%;
+    }
+}

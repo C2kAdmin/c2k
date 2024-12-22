@@ -1,0 +1,237 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    flex: 1;
+}
+
+/* Información del usuario */
+#usuario-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    order: 2;
+}
+
+#usuario-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#usuario-info p {
+    margin: 0;
+}
+
+/* Menú de navegación */
+.menu-hamburguesa {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+#nav-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    order: 3;
+}
+
+#nav-principal ul li {
+    display: inline-block;
+}
+
+#nav-principal ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+#nav-principal ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+.columna {
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.izquierda {
+    flex: 0 0 20%;
+    max-width: 20%;
+    order: 1;
+}
+
+.central {
+    flex: 0 0 55%;
+    max-width: 55%;
+    order: 2;
+}
+
+.derecha {
+    flex: 0 0 20%;
+    max-width: 20%;
+    order: 3;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    #nav-principal ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-principal ul.mostrar {
+        display: block;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .central {
+        order: 1;
+    }
+
+    .izquierda, .derecha {
+        order: 2;
+    }
+
+    #usuario-info {
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Formulario */
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo input,
+.form-grupo select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-grupo-boton button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-grupo-boton button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}

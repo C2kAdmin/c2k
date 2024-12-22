@@ -1,0 +1,85 @@
+/* global.css */
+
+/* Estilos generales */
+body {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+}
+
+/* Estilos del encabezado */
+.header {
+    border: 1px solid #333;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Estilos del contenedor principal */
+.container_ppal, .container_secund {
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+    margin: 0;
+    overflow: hidden;
+    min-height: 500px; /* Asegura una altura mínima consistente */
+}
+
+/* Estilos de las columnas */
+.left-column_ppal, .center-column_ppal, .right-column_ppal,
+.left-column_secun, .center-column_secun, .right-column_secun {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 5px 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: hidden;
+}
+
+/* Estilos de la columna central principal */
+.center-column_ppal {
+    flex-basis: 50%;
+}
+
+/* Estilos de las secciones principales */
+.section_ppal1, .section_ppal2, .section-footer {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+/* Estilos del contenido dinámico */
+#contenido_dinamico {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .container_ppal, .container_secund {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-top: 70px;
+    }
+
+    .center-column_ppal, .center-column_secun,
+    .left-column_ppal, .left-column_secun,
+    .right-column_ppal, .right-column_secun {
+        flex-basis: 100%;
+    }
+}

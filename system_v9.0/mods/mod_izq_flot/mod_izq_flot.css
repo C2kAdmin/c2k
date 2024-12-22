@@ -1,0 +1,28 @@
+/* mods/mod_izq_flot/mod_izq_flot.css */
+.mod_izq_flot {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1; /* Color de fondo */
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: Arial, sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+}
+
+.mod_izq_flot_columna_1 {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #fff; /* Fondo de las columnas */
+}
+
+.mod_lat_izq h2 {
+    font-size: 1.2rem; /* Tamaño de la fuente del título */
+}
+
+.mod_lat_izq p {
+    font-size: 0.9rem; /* Tamaño de la fuente del texto */
+}

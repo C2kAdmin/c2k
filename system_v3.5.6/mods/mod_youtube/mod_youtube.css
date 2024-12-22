@@ -1,0 +1,131 @@
+/* mod_youtube.css */
+/* Estilos CSS únicos para el módulo de YouTube */
+.modulo-ytube {
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    display: flex; /* Mostrar como un contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    background-color: #FFFFFF; /* Color de fondo blanco */
+    border-radius: 3px; /* Esquinas redondeadas */
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  Sombra */
+}
+
+.ytube-columna-1 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    background-color: #FFF; /* Color de fondo blanco */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex: 1; /* Flexibilidad igual a 1 */
+}
+
+.video-container {
+    position: relative; /* Posición relativa del contenedor */
+    width: 100%; /* Ancho completo */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0; /* Altura inicial de 0 */
+    overflow: hidden; /* Ocultar desbordamiento */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.video-container iframe {
+    position: absolute; /* Posición absoluta del iframe */
+    top: 0; /* Posición superior de 0 */
+    left: 0; /* Posición izquierda de 0 */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border-radius: 3px; /* Esquinas redondeadas */
+}
+
+.carousel-wrapper {
+    overflow: hidden; /* Ocultar desbordamiento */
+    position: relative; /* Posición relativa */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.carousel-container {
+    display: flex; /* Mostrar como un contenedor flexible */
+    flex-wrap: nowrap; /* No permitir el ajuste de los elementos flexibles */
+    animation: scroll 20s linear infinite; /* Animación de desplazamiento */
+    animation-direction: alternate; /* Dirección de la animación alternada */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* No permitir el crecimiento o encogimiento del elemento */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    width: 200px; /* Ancho de 200 píxeles */
+    scroll-snap-align: start; /* Alineación de inicio de desplazamiento */
+    cursor: pointer; /* Cursor de puntero */
+    margin-right: 10px; /* Margen derecho de 10 píxeles */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    background-color: #F9F9F9; /* Color de fondo */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    transition: transform 0.3s; /* Transición de transformación */
+}
+
+.carousel-item img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    border-radius: 3px; /* Esquinas redondeadas */
+}
+
+.carousel-item h3 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada del texto */
+    margin-top: 10px; /* Margen superior de 10 píxeles */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    color: #333; /* Color del texto */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Transformación inicial */
+    }
+    100% {
+        transform: translateX(-50%); /* Transformación final */
+    }
+}
+
+.carousel-container:hover {
+    animation-play-state: paused; /* Pausar la animación al pasar el cursor */
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Escalar al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 150px; /* Ancho de 150 píxeles en dispositivos móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        width: 120px; /* Ancho de 120 píxeles en dispositivos pequeños */
+    }
+}

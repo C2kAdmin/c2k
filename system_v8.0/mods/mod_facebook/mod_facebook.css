@@ -1,0 +1,90 @@
+/* mod_fbook.css */
+/* Estilos CSS únicos para el módulo de Facebook */
+.modulo-fbook {
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    display: flex; /* Mostrar como un contenedor flexible */
+    background-color: #FFF; /* Color de fondo blanco */
+    border-radius: 3px; /* Esquinas redondeadas */
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  Sombra */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+}
+
+.modulo-fbook-columna-1 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 0px; /* Sin margen izquierdo */
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex-grow: 1; /* Flexibilidad de crecimiento */
+    flex-basis: calc((100% - 520px) / 2); /* Ancho de la columna restante */
+}
+
+.modulo-fbook-columna-2 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 5px; /* Margen izquierdo de 5 píxeles */
+    margin-right: 5px; /* Margen derecho de 5 píxeles */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex-basis: 500px; /* Ancho fijo de 500 píxeles */
+}
+
+.modulo-fbook-columna-3 {
+    font-size: 0.875rem; /* Tamaño de fuente */
+    text-align: justify; /* Alineación justificada del texto */
+    padding-top: 10px; /* Espaciado superior de 10 píxeles */
+    padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+    padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+    padding-bottom: 10px; /* Espaciado inferior de 10 píxeles */
+    margin-top: 0px; /* Sin margen superior */
+    margin-left: 5px; /* Margen izquierdo de 5 píxeles */
+    margin-right: 0px; /* Sin margen derecho */
+    margin-bottom: 0px; /* Sin margen inferior */
+    box-sizing: border-box; /* Tamaño de caja de borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    flex-grow: 1; /* Flexibilidad de crecimiento */
+    flex-basis: calc((100% - 520px) / 2); /* Ancho de la columna restante */
+}
+
+@media (max-width: 768px) {
+    .modulo-fbook {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna en dispositivos móviles */
+    }
+
+    .modulo-fbook-columna-1,
+    .modulo-fbook-columna-2,
+    .modulo-fbook-columna-3 {
+        flex-basis: 100%; /* Ancho completo en dispositivos móviles */
+        padding-top: 0px; /* Espaciado superior de 0 píxeles */
+        padding-left: 10px; /* Espaciado izquierdo de 10 píxeles */
+        padding-right: 10px; /* Espaciado derecho de 10 píxeles */
+        padding-bottom: 0px; /* Espaciado inferior de 0 píxeles */
+        margin-top: 10px; /* Margen superior de 10 píxeles en dispositivos móviles */
+        margin-left: 0px; /* Sin margen izquierdo en dispositivos móviles */
+        margin-right: 0px; /* Sin margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Sin margen inferior en dispositivos móviles */
+    }
+}

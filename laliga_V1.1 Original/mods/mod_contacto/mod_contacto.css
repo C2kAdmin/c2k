@@ -1,0 +1,119 @@
+/* mods/mod_contacto/mod_contacto.css */
+
+/* Estilos CSS únicos para el módulo de contacto */
+.mod_contacto {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.mod_contacto_columna_1,
+.mod_contacto_columna_2 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contact-form {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#success-message, #error-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .mod_contacto {
+        flex-direction: column;
+    }
+
+    .mod_contacto_columna_1,
+    .mod_contacto_columna_2 {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px; /* Aumentar el espacio entre grupos de campos */
+    }
+
+    .contact-form .form-group.email-phone-group {
+        flex-direction: column;
+        gap: 15px; /* Aumentar espacio entre los campos de email y teléfono */
+    }
+
+    .contact-form .form-group.email-phone-group input {
+        margin-bottom: 15px; /* Aumentar el espacio entre el campo de email y el campo de teléfono */
+    }
+
+    .contact-form .form-group textarea {
+        height: 150px; /* Ajusta la altura del campo de mensaje en móviles */
+    }
+}
+
+/* Estilos específicos para PC */
+@media (min-width: 769px) {
+    .contact-form .form-group.email-phone-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Añadir espacio entre los campos de email y teléfono */
+    }
+
+    .contact-form .form-group.email-phone-group input {
+        width: calc(50% - 10px); /* 50% de ancho menos el margen */
+    }
+
+    .contact-form .form-group textarea {
+        height: 150px; /* Ajusta la altura del campo de mensaje en PC */
+    }
+}
